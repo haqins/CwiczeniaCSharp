@@ -15,7 +15,8 @@
         @foreach (var animal in shuffledAnimals)
     {
         <div class="col-3">
-            <button type="button" class="btm-outline-dark">
+            <button @onclick="@(() => ButtonClick(animal))" 
+            type="button" class="btm-outline-dark">
                 <h1>@animal</h1>
             </button>
             
