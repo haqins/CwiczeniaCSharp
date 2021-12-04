@@ -27,6 +27,7 @@
 
 @code
 {
+    //lista elementow gry
     List <string> animalEmoji = new List<string>()
         {
             "🐶","🐶",
@@ -38,8 +39,10 @@
             "🦊","🦊", 
             "🦇","🦇", 
         };
+
+        //losowanie obiektow w liscie shuffledAnimals
     List <string> shuffledAnimals = new List<string>();
-        protected override void OnInitialized()
+        protected override void OnInitialized() //kiedy zaladujesz strone
         {
             SetUpGame();
         }
@@ -51,4 +54,25 @@
             .ToList();
         }
         
+        string lastAnimalFound = string.Empty;
+        private void ButtonClick(string animal)
+        {
+            if (lastAnimalFound == string.Empty) //jesli lastanimal jest pusty to dodaje  do niego
+            {                                    //wartosci z pierwszego kliknięcia            
+                lastAnimalFound=animal;
+            }
+            else if(lastAnimalFound == animal) //jesli po drugim klikniecu mamy pare
+            {                                  //usuwamy obiekty z gry
+                lastAnimalFound = string.Empty;
+                shuffledAnimals = shuffledAnimals
+                .Select(a => a.Replace(animal, string.Empty))
+                .ToList(); 
+            }
+            else
+            {
+                //jesli nie ma pary resetuje zmienna lastAnimalFound
+                lastAnimalFound = string.Empty;
+            }
+        }
+
 }
