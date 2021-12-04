@@ -1,0 +1,15 @@
+/Users/bartek/Programy/Hello word/bin/Debug/net6.0/Hello word
+/Users/bartek/Programy/Hello word/bin/Debug/net6.0/Hello word.deps.json
+/Users/bartek/Programy/Hello word/bin/Debug/net6.0/Hello word.runtimeconfig.json
+/Users/bartek/Programy/Hello word/bin/Debug/net6.0/Hello word.dll
+/Users/bartek/Programy/Hello word/bin/Debug/net6.0/ref/Hello word.dll
+/Users/bartek/Programy/Hello word/bin/Debug/net6.0/Hello word.pdb
+/Users/bartek/Programy/Hello word/obj/Debug/net6.0/Hello word.csproj.AssemblyReference.cache
+/Users/bartek/Programy/Hello word/obj/Debug/net6.0/Hello word.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bartek/Programy/Hello word/obj/Debug/net6.0/Hello word.AssemblyInfoInputs.cache
+/Users/bartek/Programy/Hello word/obj/Debug/net6.0/Hello word.AssemblyInfo.cs
+/Users/bartek/Programy/Hello word/obj/Debug/net6.0/Hello word.csproj.CoreCompileInputs.cache
+/Users/bartek/Programy/Hello word/obj/Debug/net6.0/Hello word.dll
+/Users/bartek/Programy/Hello word/obj/Debug/net6.0/ref/Hello word.dll
+/Users/bartek/Programy/Hello word/obj/Debug/net6.0/Hello word.pdb
+/Users/bartek/Programy/Hello word/obj/Debug/net6.0/Hello word.genruntimeconfig.cache
