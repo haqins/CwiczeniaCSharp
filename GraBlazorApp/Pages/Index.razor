@@ -1,4 +1,5 @@
 ﻿@page "/" 
+@using System.Timers
 
     <style>
     .container {
@@ -28,7 +29,9 @@
         </div>
     }
     </div>
-   
+   <div class="row">
+       <h2>Czas: @timeDisplay</h2>
+   </div>
 </div>
 
 
@@ -49,8 +52,16 @@
 
         //losowanie obiektow w liscie shuffledAnimals
     List <string> shuffledAnimals = new List<string>();
+    int matchesFound = 0;
+    Timer timer;
+    int tenthsofSecondsElapsed = 0;
+    string timeDisplay;
+
         protected override void OnInitialized() //kiedy zaladujesz strone
         {
+            timer = new Timer(100);
+            timer.Elapsed += Timer_Tick;
+
             SetUpGame();
         }
         private void SetUpGame()
@@ -59,17 +70,20 @@
             shuffledAnimals = animalEmoji
             .OrderBy(item => random.Next())
             .ToList();
+            matchesFound = 0;
+            tenthsofSecondsElapsed=0;
         }
         
         string lastAnimalFound = string.Empty;
         string lastDescription = string.Empty;
-        int matchesFound = 0;
+        
         private void ButtonClick(string animal, string animalDescriprion)
         {
             if (lastAnimalFound == string.Empty) //jesli lastanimal jest pusty to dodaje  do niego
             {                                    //wartosci z pierwszego kliknięcia            
                 lastAnimalFound=animal;
                 lastDescription = animalDescriprion;
+                timer.Start();
             }
             else if((lastAnimalFound == animal) && (animalDescriprion != lastDescription))  //jesli po drugim klikniecu mamy pare
             {                                  //usuwamy obiekty z gry
@@ -80,8 +94,9 @@
                 matchesFound++;
                 if( matchesFound == 8 )
                 {
-                    SetUpGame();
-                    matchesFound = 0;
+                    timer.Stop();
+                    timeDisplay += "  Jeszcze raz??";
+                    SetUpGame();  
                 }
             }
             else
@@ -89,6 +104,18 @@
                 //jesli nie ma pary resetuje zmienna lastAnimalFound
                 lastAnimalFound = string.Empty;
             }
+        }
+        
+        private void Timer_Tick(Object source, ElapsedEventArgs e)
+        {
+            InvokeAsync(() =>
+                {
+                tenthsofSecondsElapsed++;
+                timeDisplay = 
+                (tenthsofSecondsElapsed / 10F).ToString("0.0s");
+                StateHasChanged();
+
+                });
         }
 
 }
