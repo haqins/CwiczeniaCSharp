@@ -11,7 +11,8 @@
             "type": "pwa-chrome",
             "name": "http://localhost:5235",
             "request": "launch",
-            "url": "http://localhost:5235"
+            "url": "http://localhost:5235",
+            "trace": true
         }
     ]
 }

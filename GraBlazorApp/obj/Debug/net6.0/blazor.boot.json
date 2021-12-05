@@ -196,13 +196,13 @@
       "mscorlib.dll": "sha256-tlYWYAypJO+6gsCjV734iAJn8xcZYhUjM7vgxDLJluE=",
       "netstandard.dll": "sha256-E48Na3ZQWKExltzTwgP0Ao+UqWhiVYeerXfUL9lEc+c=",
       "System.Private.CoreLib.dll": "sha256-J85Z1XnwapHef31sR58JFq+0HrFP5BjOoObPKjdFHCw=",
-      "GraBlazorApp.dll": "sha256-Cua\/NbNzSaxD2TF+ezAgNZkjWRwLdnogcHXfsp3zJ58="
+      "GraBlazorApp.dll": "sha256-OwXKnJY\/nqViTfP2qqymMWnq07ltJ0MtVREfQBcYkKg="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "GraBlazorApp.pdb": "sha256-CRYHqFdBcYUXfP9kZAhVDcA0sF4uc4zbvnmQehuMyyc="
+      "GraBlazorApp.pdb": "sha256-pHsmf5htVnWWF\/LKbfti5cYiC\/srO+1KZqPLap990qM="
     },
     "runtime": {
       "dotnet.6.0.0.ovcpgeb7zl.js": "sha256-LOq52qjRa3+zt3w4UL10rS3UdwHxVQxW0JAsMPO9QAM=",

@@ -12,10 +12,12 @@
 </style>
 <div class="container">
     <div class="row">
-        @foreach (var animal in shuffledAnimals)
+        @for (var animalNumber = 0; animalNumber < shuffledAnimals.Count; animalNumber++)
     {
+        var animal = shuffledAnimals[animalNumber];
+        var uniqueDescription = $"Button #{animalNumber}";
         <div class="col-3">
-            <button @onclick="@(() => ButtonClick(animal))" 
+            <button @onclick="@(() => ButtonClick(animal, uniqueDescription))" 
             type="button" class="btm-outline-dark">
                 <h1>@animal</h1>
             </button>
@@ -56,13 +58,15 @@
         }
         
         string lastAnimalFound = string.Empty;
-        private void ButtonClick(string animal)
+        string lastDescription = string.Empty;
+        private void ButtonClick(string animal, string animalDescriprion)
         {
             if (lastAnimalFound == string.Empty) //jesli lastanimal jest pusty to dodaje  do niego
             {                                    //wartosci z pierwszego kliknięcia            
                 lastAnimalFound=animal;
+                lastDescription = animalDescriprion;
             }
-            else if(lastAnimalFound == animal) //jesli po drugim klikniecu mamy pare
+            else if((lastAnimalFound == animal) && (animalDescriprion != lastDescription))  //jesli po drugim klikniecu mamy pare
             {                                  //usuwamy obiekty z gry
                 lastAnimalFound = string.Empty;
                 shuffledAnimals = shuffledAnimals
