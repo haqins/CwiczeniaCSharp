@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ksm+jmqFsSoPL8ChePihN42AM0pXk7rDM0Imz+roPhI=",
+  "Hash": "QYHNYsvNckyRIPWDLowwndq/Jqjn010kGhOukCvUNU8=",
   "Source": "GraBlazorApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -7087,23 +7087,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/index.html"
-    },
-    {
-      "Identity": "/Users/bartek/Programy/GraBlazorApp/wwwroot/sample-data/weather.json",
-      "SourceId": "GraBlazorApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/bartek/Programy/GraBlazorApp/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "sample-data/weather.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/sample-data/weather.json"
     }
   ]
 }
