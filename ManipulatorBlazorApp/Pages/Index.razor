@@ -24,7 +24,7 @@
         <div class="col-sm-6 btn-group" role="group">
             @for (var buttonNumber =1; buttonNumber <= 6; buttonNumber++)
             {
-                string valueToDisplay = $"Button #{buttonNumber}";
+                string valueToDisplay = $"Liczka {buttonNumber}";
                 <button type="button" class="btn btn-secondary"
                     @onclick="() => ButtonClick(valueToDisplay)">
                     @buttonNumber
