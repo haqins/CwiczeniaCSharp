@@ -19,6 +19,19 @@
             <input type="range"@onchange="UpdateValue" />
         </div>
     </div>
+    <div class="row mt-2">
+        <div class="col-sm-6">Naciśnij:</div>
+        <div class="col-sm-6 btn-group" role="group">
+            @for (var buttonNumber =1; buttonNumber <= 6; buttonNumber++)
+            {
+                string valueToDisplay = $"Button #{buttonNumber}";
+                <button type="button" class="btn btn-secondary"
+                    @onclick="() => ButtonClick(valueToDisplay")>
+                    @buttonNumber
+                </button>
+            }
+        </div>
+    </div>
     <div class="row mt-5">
         <h2>
             Here's the value: <strong>@DisplayValue</strong>
@@ -33,4 +46,9 @@
     {
         DisplayValue = e.Value.ToString();
     }
-}
+
+    private void ButtonClick(string displayValue)
+    {
+        DisplayValue = displayValue;
+    }
+};
