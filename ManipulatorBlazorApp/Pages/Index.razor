@@ -10,7 +10,8 @@
         </div>
       <div class="col-sm-6">
         <input type="text" placeholder="Enter text" @onchange="UpdateValue" />
-</div> </div>
+</div>
+ </div>
     <div class="row mt-2">
         <div class="col-sm-6">
             Pick a number:
@@ -32,10 +33,23 @@
             }
         </div>
     </div>
+    <div class ="row-mt-2">
+        <div class="col-sm-6"> wybierz date:</div>
+        <div class="col-sm-6">
+            <input type="date" @onchange="UpdateValue" />
+        </div>
+    </div>
+    <div class="row-mt-2">
+        <div class="col-sm-6">wybierz kolor</div>
+        <div class="col-sm-6">
+            <input type="color" @onchange="UpdateValue"/>
+        </div>
+    </div>
     <div class="row mt-5">
         <h2>
             Here's the value: <strong>@DisplayValue</strong>
-</h2> </div>
+        </h2> 
+    </div>
 </div>
 @code
 
