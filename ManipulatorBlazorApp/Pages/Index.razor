@@ -2,14 +2,14 @@
 
 <div class="container">
     <div class="row">
-        <h1>Experiment with controls</h1>
+        <h1>Eksperyment z kontrolkami</h1>
     </div>
     <div class="row mt-2">
         <div class="col-sm-6">
-            Enter text: 
+            Wpisz tekst: 
         </div>
       <div class="col-sm-6">
-        <input type="text" placeholder="Enter text" @onchange="UpdateValue" />
+        <input type="text" placeholder="Kocham Patke" @onchange="UpdateValue" />
 </div>
  </div>
     <div class="row mt-2">
@@ -25,7 +25,7 @@
         <div class="col-sm-6 btn-group" role="group">
             @for (var buttonNumber =1; buttonNumber <= 6; buttonNumber++)
             {
-                string valueToDisplay = $"Liczka {buttonNumber}";
+                string valueToDisplay = $"Liczba {buttonNumber}";
                 <button type="button" class="btn btn-secondary"
                     @onclick="() => ButtonClick(valueToDisplay)">
                     @buttonNumber
@@ -47,7 +47,7 @@
     </div>
     <div class="row mt-5">
         <h2>
-            Here's the value: <strong>@DisplayValue</strong>
+            Podana wartość: <strong>@DisplayValue</strong>
         </h2> 
     </div>
 </div>
