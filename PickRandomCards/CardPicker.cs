@@ -1,19 +1,25 @@
 class CardPicker
 {
+    static Random random = new Random();
    public static string [] PickSomeCards(int numberOfCards)
    {
        string[] PickedCards = 
        new string[numberOfCards];
        for (int i =0; i < numberOfCards; i++;)
        {
-           PickedCards[i] = RandomValue()+
-           "of" + RandomSuit();
+           PickedCards[i] = RandomValue()
+           +"of" +
+            RandomSuit();
        }
        return PickedCards;
    }
    public static RandomSuit ()
    {
-
+       int Value = random.Next(1,5);
+       if (Value == 1 ) return "Pik";
+       if (Value == 2 ) return "Serce";
+       if (Value == 3 ) return  "żołędź";
+       return "kier";
    }
 
    public static RandomValue ()
