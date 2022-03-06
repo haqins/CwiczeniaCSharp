@@ -5,7 +5,7 @@ class CardPicker
    {
        string[] PickedCards = 
        new string[numberOfCards];
-       for (int i =0; i < numberOfCards; i++;)
+       for (int i =0; i < numberOfCards; i++)
        {
            PickedCards[i] = RandomValue()
            +"of" +
@@ -24,7 +24,13 @@ class CardPicker
 
    public static RandomValue ()
    {
-
+       int Value = random.Next(1,14);
+       if (Value == 1 ) return "As";
+       if (Value == 11 ) return "Jopek";
+       if (Value == 12 ) return "Dama";
+       if (Value == 13 ) return "Król";
+       return Value.ToString();
+    
    }
 }
 
