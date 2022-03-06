@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿static void Main(string[] args)
+{
+    Console.Write("Wybierz ilość kart do wylosowania:");
+    string line = Console.ReadLine();
+    if (int.TryParse(line, out int  numberOfCards))
+    {
+        foreach( string card in 
+        CardPicker.PickSomeCards(numberOfCards))
+        {
+            Console.Write(card);
+        }
+    }
+    else
+    {
+        Console.Write("Podaj jakąś liczbe od 1 do 14 :)");
+    }
+}
