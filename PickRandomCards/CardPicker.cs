@@ -13,7 +13,7 @@ class CardPicker
        }
        return PickedCards;
    }
-   public static RandomSuit ()
+  private static string RandomSuit ()
    {
        int Value = random.Next(1,5);
        if (Value == 1 ) return "Pik";
@@ -22,7 +22,7 @@ class CardPicker
        return "kier";
    }
 
-   public static RandomValue ()
+   private static string RandomValue ()
    {
        int Value = random.Next(1,14);
        if (Value == 1 ) return "As";

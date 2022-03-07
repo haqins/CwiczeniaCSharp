@@ -1,0 +1,15 @@
+/Users/bartek/Programy/PickRandomCards/obj/Debug/net6.0/PickRandomCards.csproj.AssemblyReference.cache
+/Users/bartek/Programy/PickRandomCards/obj/Debug/net6.0/PickRandomCards.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bartek/Programy/PickRandomCards/obj/Debug/net6.0/PickRandomCards.AssemblyInfoInputs.cache
+/Users/bartek/Programy/PickRandomCards/obj/Debug/net6.0/PickRandomCards.AssemblyInfo.cs
+/Users/bartek/Programy/PickRandomCards/obj/Debug/net6.0/PickRandomCards.csproj.CoreCompileInputs.cache
+/Users/bartek/Programy/PickRandomCards/bin/Debug/net6.0/PickRandomCards
+/Users/bartek/Programy/PickRandomCards/bin/Debug/net6.0/PickRandomCards.deps.json
+/Users/bartek/Programy/PickRandomCards/bin/Debug/net6.0/PickRandomCards.runtimeconfig.json
+/Users/bartek/Programy/PickRandomCards/bin/Debug/net6.0/PickRandomCards.dll
+/Users/bartek/Programy/PickRandomCards/bin/Debug/net6.0/ref/PickRandomCards.dll
+/Users/bartek/Programy/PickRandomCards/bin/Debug/net6.0/PickRandomCards.pdb
+/Users/bartek/Programy/PickRandomCards/obj/Debug/net6.0/PickRandomCards.dll
+/Users/bartek/Programy/PickRandomCards/obj/Debug/net6.0/ref/PickRandomCards.dll
+/Users/bartek/Programy/PickRandomCards/obj/Debug/net6.0/PickRandomCards.pdb
+/Users/bartek/Programy/PickRandomCards/obj/Debug/net6.0/PickRandomCards.genruntimeconfig.cache
