@@ -1,4 +1,8 @@
-﻿class Program 
+﻿namespace PickRandomCards
+{
+    
+}
+class Program 
 {
 static void Main(string[] args)
 {
@@ -9,6 +13,7 @@ static void Main(string[] args)
         foreach( string card in 
         CardPicker.PickSomeCards(numberOfCards))
         {
+            Console.Write("\n");
             Console.Write(card);
         }
     }

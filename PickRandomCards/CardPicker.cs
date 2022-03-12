@@ -1,3 +1,7 @@
+namespace PickRandomCards
+{
+    
+}
 class CardPicker
 {
     static Random random = new Random();
