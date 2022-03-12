@@ -1,6 +1,11 @@
 {
     "configurations": [
         {
+            "program": "/Users/bartek/Programy/PickRandomCards/bin/Debug/net6.0/PickRandomCards.dll",
+        }, 
+
+    
+        {
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",

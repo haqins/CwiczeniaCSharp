@@ -1,4 +1,6 @@
-﻿static void Main(string[] args)
+﻿class Program 
+{
+static void Main(string[] args)
 {
     Console.Write("Wybierz ilość kart do wylosowania:");
     string line = Console.ReadLine();
@@ -15,3 +17,6 @@
         Console.Write("Podaj jakąś liczbe od 1 do 14 :)");
     }
 }
+
+}
+
